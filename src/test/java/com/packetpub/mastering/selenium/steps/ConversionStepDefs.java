@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by sindh on 18/03/2017.
+ * Created by sebastian on 18/03/2017.
  */
 public class ConversionStepDefs {
     private WebDriver driver;
