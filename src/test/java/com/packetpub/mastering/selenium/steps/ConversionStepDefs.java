@@ -24,7 +24,9 @@ public class ConversionStepDefs {
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         //driver = new FirefoxDriver();
-        fail("a fail test");
+       //used the below like to show a fail >build stop in Jenkins
+        //should add -Dmaven.test.failure.ignore=false in jenkins config file  in maven global ops 
+        // fail("a fail test");
         System.setProperty("webdriver.chrome.driver","C:\\Users\\sindh\\Desktop\\Training\\AllDriversNew\\chromedriver.exe" );
         driver = new ChromeDriver();
         driver.manage().window().maximize();
