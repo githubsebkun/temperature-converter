@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 /**
  * Created by sebastian on 18/03/2017.
@@ -23,6 +24,7 @@ public class ConversionStepDefs {
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         //driver = new FirefoxDriver();
+        fail("a fail test");
         System.setProperty("webdriver.chrome.driver","C:\\Users\\sindh\\Desktop\\Training\\AllDriversNew\\chromedriver.exe" );
         driver = new ChromeDriver();
         driver.manage().window().maximize();
